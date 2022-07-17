@@ -18,6 +18,7 @@ public class TravelController {
     public Map<String, Object> findTravleSites(HttpServletRequest request, HttpServletResponse response) {
 
         System.out.println("client change");
+        System.out.println("second client change");
         System.out.println("server change");
         System.out.println("second server change");
         return null;
