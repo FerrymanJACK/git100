@@ -20,11 +20,12 @@ public class TravelController {
 
         System.out.println("client change");
         System.out.println("second client change");
-        String str = "20.205.243.166 github.com-111";
+        String str = "20.205.243.166 github.com-111-112";
         System.out.println("server change");
         System.out.println("second server change");
 
         Map<String, Object> t_rtn = new HashMap<>();
+        t_rtn.put("code", "00");
         return null;
     }
 
