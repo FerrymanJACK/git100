@@ -16,7 +16,8 @@ import java.util.Map;
 public class TravelController {
 
     public Map<String, Object> findTravleSites(HttpServletRequest request, HttpServletResponse response) {
-
+        
+        System.out.println("client changes");
         return null;
     }
 
