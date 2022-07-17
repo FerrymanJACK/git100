@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: git100
+
+server:
+  port: 7550
+
+
