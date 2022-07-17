@@ -26,7 +26,7 @@ public class TravelController {
 
         Map<String, Object> t_rtn = new HashMap<>();
         t_rtn.put("code", "00");
-        t_rt.put("msg", "success");
+        t_rtn.put("msg", "success");
         return null;
     }
 
