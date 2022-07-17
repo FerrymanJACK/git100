@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -21,6 +22,8 @@ public class TravelController {
         System.out.println("second client change");
         System.out.println("server change");
         System.out.println("second server change");
+
+        Map<String, Object> t_rtn = new HashMap<>();
         return null;
     }
 
