@@ -1,11 +1,15 @@
 package com.ferry.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.ferry.entity.Person;
+import com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * @description:
@@ -29,5 +33,19 @@ public class TravelController {
         t_rtn.put("msg", "success");
         return null;
     }
+
+    public static String findAllSites(HttpServletRequest request, HttpServletResponse response) {
+        Map<String, Object> t_rtn = new HashMap<>();
+        Person person = new Person();
+        return Optional.ofNullable(person.getId()).orElse("param is null");
+    }
+
+    public static void main(String args[]) {
+        HttpServletRequest request = null;
+        HttpServletResponse response = null;
+        String rtn = findAllSites(request, response);
+        System.out.println(rtn);
+    }
+
 
 }
