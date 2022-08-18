@@ -3,6 +3,7 @@ package com.ferry.controller;
 import com.alibaba.fastjson.JSON;
 import com.ferry.entity.Person;
 import com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -18,8 +19,10 @@ import java.util.Optional;
  * @version:1.0
  */
 @RestController
+@RequestMapping("/travle")
 public class TravelController {
 
+    @RequestMapping("/findTravelSites")
     public Map<String, Object> findTravleSites(HttpServletRequest request, HttpServletResponse response) {
 
         System.out.println("client change");
@@ -31,7 +34,7 @@ public class TravelController {
         Map<String, Object> t_rtn = new HashMap<>();
         t_rtn.put("code", "00");
         t_rtn.put("msg", "success");
-        return null;
+        return t_rtn;
     }
 
     public static String findAllSites(HttpServletRequest request, HttpServletResponse response) {
