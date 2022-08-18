@@ -1,4 +1,4 @@
-FROM jdk:11
+FROM openjdk:8
 VOLUME /tmp
 ADD target/git100-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8888
