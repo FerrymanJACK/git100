@@ -39,7 +39,7 @@ public class TravelController {
 
     @RequestMapping("/testWebhook")
     public String testWebhook(HttpServletRequest request, HttpServletResponse response) {
-        return "github webhook success";
+        return "webhook success";
     }
 
     public static String findAllSites(HttpServletRequest request, HttpServletResponse response) {
